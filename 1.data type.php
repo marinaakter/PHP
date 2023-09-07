@@ -15,8 +15,13 @@ echo false;
 $arr = array(1,2,3,4,5);
 print_r([1,2,3,4,5,6,7,8,9,10,"Hello",false]);
 
+//null
+echo null;
 
+//object
+class Animal{
 
+}
 
-
+var_dump(new Animal());
 

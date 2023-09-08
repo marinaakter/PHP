@@ -17,7 +17,7 @@ $superman=[
 
 ];
 //print_r($superman);
-echo $superman["city"];
+//echo $superman["city"];
 
 
 
@@ -42,3 +42,39 @@ $groceryList=[
 ];
 
 //echo $groceryList["drinks"]["non-alcohol"][1];
+
+
+//-------------Array Manipulation-----------------//
+//adding elements
+$bestFriends[]="Diana";
+///print_r($bestFriends);
+
+//removing elements
+unset($bestFriends[4]);
+//print_r($bestFriends);
+
+//updating elements
+$bestFriends[2]="Marina";
+//print_r($bestFriends);
+
+//counting elements
+//echo count($bestFriends);
+//echo count($groceryList);
+
+//sort
+sort($bestFriends);
+//print_r($bestFriends);
+
+//array search
+//echo array_search("Marina",$bestFriends);
+
+//array reverse
+//print_r(array_reverse($bestFriends));
+
+
+
+$heros=["Wolverine","Superman","Spiderman","Ironman","Batman","Hulk","Wolverine","Superman"];
+
+//unique values
+//print_r(array_unique($heros));
+

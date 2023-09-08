@@ -19,6 +19,11 @@ $superman=[
 //print_r($superman);
 //echo $superman["city"];
 
+//array_values and keys
+//print_r(array_values($superman));
+//print_r(array_keys($superman));
+
+
 
 
 //-------------Multidimensional Array-----------------//it contains one or more arrays.
@@ -45,36 +50,64 @@ $groceryList=[
 
 
 //-------------Array Manipulation-----------------//
-//adding elements
+//adding elements//
 $bestFriends[]="Diana";
-///print_r($bestFriends);
+//print_r($bestFriends);
 
-//removing elements
+//removing elements//
 unset($bestFriends[4]);
 //print_r($bestFriends);
 
-//updating elements
+//updating elements//
 $bestFriends[2]="Marina";
 //print_r($bestFriends);
 
-//counting elements
-//echo count($bestFriends);
-//echo count($groceryList);
+//counting elements//
+echo count($bestFriends);
+echo count($groceryList);
 
-//sort
+//sort//
 sort($bestFriends);
 //print_r($bestFriends);
 
-//array search
-//echo array_search("Marina",$bestFriends);
+//array search//
+echo array_search("Marina",$bestFriends);
 
-//array reverse
-//print_r(array_reverse($bestFriends));
+//array reverse//
+print_r(array_reverse($bestFriends));
 
 
 
-$heros=["Wolverine","Superman","Spiderman","Ironman","Batman","Hulk","Wolverine","Superman"];
+$heros=["Wolverine","Superman","Spiderman","Batman"];
 
-//unique values
-//print_r(array_unique($heros));
+//unique values//
+print_r(array_unique($heros));
 
+
+//array slice//
+print_r(
+   array_slice($heros,1,2)
+);
+
+
+//array shift//
+echo array_shift($heros);
+print_r($heros);
+
+
+//array unshift//
+$todo=[
+    "learn PHP",
+    "shopping"
+];
+
+array_unshift($todo,"Sleeping");
+//print_r($todo);
+
+//array pop
+array_pop($todo);
+print_r($todo);
+
+//array push
+array_push($todo,"Singing");
+print_r($todo);

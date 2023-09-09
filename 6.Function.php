@@ -18,11 +18,11 @@ echo str_word_count($message);
 
 
 //str first letter capital and small:
-// echo ucfirst($message);
-// echo lcfirst($message);
+echo ucfirst($message);
+echo lcfirst($message);
 
 //str loweer letter capital and small:
-//echo strtolower(strtoupper($message));
+echo strtolower(strtoupper($message));
 
 
 
